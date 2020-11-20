@@ -28,44 +28,47 @@ void main() {
               height: 200,
               width: 250,
               child: Container(
-                  decoration: BoxDecoration(
-                image: const DecorationImage(
-                  image: NetworkImage(
-                      'https://media.geeksforgeeks.org/wp-content/cdn-uploads/logo.png'),
-                  scale: 3.0,
-                ),
-                border: Border.all(
-                    color: Colors.green,
-                    width: 4.0,
-                    style: BorderStyle.solid), //Border.all
-                /* The BorderRadius widget  is here */
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10.0),
-                  topRight: Radius.circular(10.0),
-                  bottomLeft: Radius.circular(10.0),
-                  bottomRight: Radius.circular(10.0),
-                ), //BorderRadius.only
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.greenAccent[200],
-                    offset: const Offset(
-                      5.0,
-                      5.0,
-                    ),
-                    blurRadius: 10.0,
-                    spreadRadius: 2.0,
-                  ),
-                  BoxShadow(
-                    color: Colors.white,
-                    offset: const Offset(0.0, 0.0),
-                    blurRadius: 5.0,
-                    spreadRadius: 1.0,
-                  ),
-                ],
-                //BoxDecoration
-              )),
-            ),
-          ),
+                decoration: BoxDecoration(
+                  image: const DecorationImage(
+                    image: NetworkImage(
+                        'https://media.geeksforgeeks.org/wp-content/cdn-uploads/logo.png'), //NetworkImage
+                    scale: 3.0,
+                  ), //DecprationImage
+                  border: Border.all(
+                      color: Colors.green,
+                      width: 4.0,
+                      style: BorderStyle.solid), //Border.all
+
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10.0),
+                    topRight: Radius.circular(10.0),
+                    bottomLeft: Radius.circular(10.0),
+                    bottomRight: Radius.circular(10.0),
+                  ), //BorderRadius.only
+                  /************************************/
+                  /* The BoxShadow widget  is here */
+                  /************************************/
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.greenAccent[200],
+                      offset: const Offset(
+                        5.0,
+                        5.0,
+                      ),
+                      blurRadius: 10.0,
+                      spreadRadius: 2.0,
+                    ), //BoxShadow
+                    BoxShadow(
+                      color: Colors.white,
+                      offset: const Offset(0.0, 0.0),
+                      blurRadius: 5.0,
+                      spreadRadius: 1.0,
+                    ), //BoxShadow
+                  ],
+                ), //BoxDecoration
+              ), //Container
+            ), //SizedBox
+          ), //Padding
         ), //Center
       ), //Scaffold
       debugShowCheckedModeBanner: false, //Deug banner is turned off
